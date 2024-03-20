@@ -16,31 +16,11 @@ The abstract from the paper is the following:
 
 This model was contributed by [Alara Dirik](https://huggingface.co/adirik). The original code is not released, this implementation is based on the Kakao Brain implementation based on the original paper.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## 2.SAM
 
 ![sam](https://github.com/shishengqiang123/demo/blob/main/sam.png)
 
-### 1.Segment Anything Model (SAM): a new AI model from Meta AI that can "cut out" any object, in any image, with a single click [[video]](https://segment-anything.com/assets/section-1.4a.mp4) [[demo]](https://segment-anything.com/demo) [[code]](https://github.com/facebookresearch/segment-anything)[[paper]](https://arxiv.org/pdf/2304.02643v1.pdf)
+### Segment Anything Model (SAM): a new AI model from Meta AI that can "cut out" any object, in any image, with a single click [[video]](https://segment-anything.com/assets/section-1.4a.mp4) [[demo]](https://segment-anything.com/demo) [[code]](https://github.com/facebookresearch/segment-anything)[[paper]](https://arxiv.org/pdf/2304.02643v1.pdf)
 
 The abstract from the paper is the following:
 
@@ -53,5 +33,3 @@ Tips:
 - You can prompt multiple points for the same image, and predict a single mask.
 - Fine-tuning the model is not supported yet
 - According to the paper, textual input should be also supported. However, at this time of writing this seems to be not supported according to [the official repository](https://github.com/facebookresearch/segment-anything/issues/4#issuecomment-1497626844).
-
-2.
