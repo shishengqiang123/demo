@@ -33,3 +33,41 @@ Tips:
 - You can prompt multiple points for the same image, and predict a single mask.
 - Fine-tuning the model is not supported yet
 - According to the paper, textual input should be also supported. However, at this time of writing this seems to be not supported according to [the official repository](https://github.com/facebookresearch/segment-anything/issues/4#issuecomment-1497626844).
+
+## 3.BLIP
+
+![](https://github.com/shishengqiang123/demo/blob/main/BLIP.gif)
+
+### Overview
+
+The BLIP model was proposed in [BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation](https://arxiv.org/abs/2201.12086) by Junnan Li, Dongxu Li, Caiming Xiong, Steven Hoi. [[code]](https://github.com/salesforce/BLIP)
+
+BLIP is a model that is able to perform various multi-modal tasks including:
+
+- Visual Question Answering
+- Image-Text retrieval (Image-text matching)
+- Image Captioning
+
+The abstract from the paper is the following:
+
+*Vision-Language Pre-training (VLP) has advanced the performance for many vision-language tasks. However, most existing pre-trained models only excel in either understanding-based tasks or generation-based tasks. Furthermore, performance improvement has been largely achieved by scaling up the dataset with noisy image-text pairs collected from the web, which is a suboptimal source of supervision. In this paper, we propose BLIP, a new VLP framework which transfers flexibly to both vision-language understanding and generation tasks. BLIP effectively utilizes the noisy web data by bootstrapping the captions, where a captioner generates synthetic captions and a filter removes the noisy ones. We achieve state-of-the-art results on a wide range of vision-language tasks, such as image-text retrieval (+2.7% in average recall@1), image captioning (+2.8% in CIDEr), and VQA (+1.6% in VQA score). BLIP also demonstrates strong generalization ability when directly transferred to videolanguage tasks in a zero-shot manner. Code, models, and datasets are released.*
+
+## 4.CLIP
+
+![](https://github.com/shishengqiang123/demo/blob/main/CLIP.png)
+
+### Overview
+
+The CLIP model was proposed in [Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020) by Alec Radford, Jong Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agarwal, Girish Sastry, Amanda Askell, Pamela Mishkin, Jack Clark, Gretchen Krueger, Ilya Sutskever. CLIP (Contrastive Language-Image Pre-Training) is a neural network trained on a variety of (image, text) pairs. It can be instructed in natural language to predict the most relevant text snippet, given an image, without directly optimizing for the task, similarly to the zero-shot capabilities of GPT-2 and 3. [[code]](https://github.com/openai/CLIP)
+
+The abstract from the paper is the following:
+
+*State-of-the-art computer vision systems are trained to predict a fixed set of predetermined object categories. This restricted form of supervision limits their generality and usability since additional labeled data is needed to specify any other visual concept. Learning directly from raw text about images is a promising alternative which leverages a much broader source of supervision. We demonstrate that the simple pre-training task of predicting which caption goes with which image is an efficient and scalable way to learn SOTA image representations from scratch on a dataset of 400 million (image, text) pairs collected from the internet. After pre-training, natural language is used to reference learned visual concepts (or describe new ones) enabling zero-shot transfer of the model to downstream tasks. We study the performance of this approach by benchmarking on over 30 different existing computer vision datasets, spanning tasks such as OCR, action recognition in videos, geo-localization, and many types of fine-grained object classification. The model transfers non-trivially to most tasks and is often competitive with a fully supervised baseline without the need for any dataset specific training. For instance, we match the accuracy of the original ResNet-50 on ImageNet zero-shot without needing to use any of the 1.28 million training examples it was trained on. We release our code and pre-trained model weights at this https URL.*
+
+## 5.Stable Diffusion
+
+![](https://github.com/shishengqiang123/demo/blob/main/stable%20diffusion.png)
+
+### Owerview
+
+Stable Diffusion is a state-of-the-art machine learning model designed for generating and modifying images based on textual descriptions. Developed by Stability AI, it represents a significant advancement in the field of AI-generated art and content creation. The model operates by understanding and interpreting text inputs, then translating these inputs into complex visual outputs, effectively "imagining" visual representations of the described scenes or objects. 
